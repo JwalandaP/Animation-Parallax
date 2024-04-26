@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #15344896;
+}
+
+/* Header Container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 10vh;
+  background-color: #153448;
+  border-radius: 10px;
+  position: sticky;
+  top: 0;
+}
+
+/* Conatct list */
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-right: 10%;
+  color: aliceblue;
+}
+
+/* Header title */
+.title {
+  font-size: 50px;
+  color: aliceblue;
+  letter-spacing: 10px;
+  border-radius: 10px;
+  background-color: none;
+  margin: 0;
+  padding-left: 100px;
+}
+
+/* logo on the top left of header */
+.logo {
+  list-style: none;
+  /* border: 1px solid black; */
+  width: 5%;
+  border-radius: 50%;
+  text-align: center;
+  background: url(./image/logo.png);
+  background-size: 136px;
+  background-color: #948979;
+}
+
+/* icon tranform when hver over contact */
+li:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+/* The main container in the homepage */
+.container {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  justify-content: center;
+  align-items: center;
+}
+/* the info div inside the info div */
+.info {
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* the info div on the left of homepage */
+.info-side {
+  /* border: 1px solid black; */
+  height: 80vh;
+  width: 30vw;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border-radius: 30px;
+  background-color: #948979;
+  text-align: left;
+  padding-left: 10px;
+  color: aliceblue;
+}
+
+/* Buy Now Button */
+.buynow {
+  text-align: center;
+  background-color: #153448;
+  height: 5%;
+  width: 30%;
+  padding-top: 2%;
+  border-radius: 12px;
+  float: right;
+}
+
+/* Button transform when hovered over */
+.buynow:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* The entire div containing the sale div and the picture div */
+.picture-sale {
+  /* border: 1px solid black; */
+  height: 80vh;
+  width: 70vw;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 10% 90%;
+  /* background-color: #3c5b6f; */
+  background: url(./image/sale.png) no-repeat center;
+  background-size: cover;
+  border-radius: 15px;
+  color: aliceblue;
+}
+
+/* the sale div on top of the picture div */
+.sale {
+  /* border: 1px solid black; */
+  width: 100%;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: #948979;
+  /* border-radius: 30px; */
+  border-radius: 15px;
+  padding-top: 1%;
+  text-align: center;
+  font-size: 30px;
+  word-spacing: 10px;
+}
+
+/* the div containing 3 pictures */
+.picture {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid black; */
+  align-items: center;
+}
+
+/* all the oval shaped 3 pcitures inside the picture div */
+.pic1,
+.pic2,
+.pic3 {
+  /* border: 1px solid black; */
+  width: 30%;
+  border-radius: 50%;
+  height: 70%;
+  box-shadow: 10px 10px 5px lightblue;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #153448;
+  position: relative;
+  animation: coolrotate 10s infinite linear;
+}
+
+/* the labels inside the 3 picture divs */
+.front-end,
+.back-end,
+.full-stack {
+  font-size: 25px;
+  background-color: #948979de;
+  color: aliceblue;
+  border-radius: 15px;
+  padding: 32px;
+}
+
+/* full stack div */
+.full-stack {
+  padding: 18px;
+}
+
+/* the footer div for the homepage */
+.service {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  /* border: 1px solid black; */
+  height: 10vh;
+  width: 100vw;
+  border-radius: 30px;
+  background-color: #948979;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* text transform when hover over the services divs */
+.service > *:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+.services,
+.classes,
+.freevideos,
+.aboutus {
+  color: aliceblue;
+  padding-top: 15px;
+  font-size: 30px;
+}
+
+/* keyframe to rotate the three pictures inside the picture div */
+@keyframes coolrotate {
+  0% {
+    transform: rotateY(0);
+  }
+  20% {
+    transform: rotateY(72 deg);
+  }
+  40% {
+    transform: rotateY(144deg);
+  }
+  60% {
+    transform: rotateY(216deg);
+  }
+  80% {
+    transform: rotateY(288deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* pargraph inside every page other than the homepage */
+.paragraph {
+  height: 10vh;
+  background-color: #94897900;
+  color: aliceblue;
+}
+
+/* image 1 of the 2nd page */
+.image1 {
+  background: url(./image/code.jpeg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80vh;
+}
+
+/* image 2 of the 3rd page */
+.image2 {
+  background: url(./image/coders.webp) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80vh;
+}
+
+/* image 3 of the 4th page */
+.image3 {
+  background: url(./image/intelligent.jpeg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80vh;
+}
+/* image 4 of the 5th page */
+.image4 {
+  background: url(./image/dc.jpeg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
+}
+
+/* Footer at the end of the 5th page */
+.footer {
+  height: 6.5vh;
+  text-align: center;
+  color: aliceblue;
+  padding-top: 2%;
+}
